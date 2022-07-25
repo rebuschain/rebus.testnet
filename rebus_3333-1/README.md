@@ -4,11 +4,11 @@
 
 ### Genesis Validators
 
-Follow the instructions on the "Running as a genesis validator" guide.
+Follow the instructions on the ["Submitting your GenTx for the Rebus Incentivized Testnet"](gentx.md) guide.
 
 Full nodes and general particpants
 
-Follow the instructions on the official documentation to join the testnet and how to obtain tokens using the faucet.
+Follow the instructions on the official documentation to [join the testnet](https://docs.rebuschain.com/validators/joining-the-testnets/).
 
 ## Genesis File
 
