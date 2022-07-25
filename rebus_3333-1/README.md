@@ -16,7 +16,7 @@ It wil be posted on 8/1/2022
 
 ## Details
 
-- Network Chain ID: `rebus-3333-1`
+- Network Chain ID: `reb_3333-1`
 - EIP155 Chain ID: `3333`
 - rebusd version: `v0.0.2`
 
