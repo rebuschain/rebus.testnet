@@ -84,8 +84,8 @@ The following instructions are written targeting an Ubuntu 18.04 system. If you 
    ```bash
     rebusd gentx <your key name> 100000000000000000000arebus \
     --chain-id=reb_3333-1 \
-    --moniker=psval1 \
-    --details="my details" \
+    --moniker=<your moniker name> \
+    --details="your details" \
     --commission-rate=0.05 \
     --commission-max-rate=0.2 \
     --commission-max-change-rate=0.01 \
