@@ -6,17 +6,17 @@
 
 Follow the instructions on the ["Submitting your GenTx for the Rebus Incentivized Testnet"](gentx.md) guide.
 
-Full nodes and general particpants
+Full nodes and general participants
 
 Follow the instructions on the official documentation to [join the testnet](https://docs.rebuschain.com/validators/joining-the-testnets/).
 
 ## Genesis File
 
-It wil be posted on 8/1/2022
+It will be posted on 8/1/2022
 
 ## Details
 
-- Network Chain ID: `rebus-3333-1`
+- Network Chain ID: `reb_3333-1`
 - EIP155 Chain ID: `3333`
 - rebusd version: `v0.0.2`
 
