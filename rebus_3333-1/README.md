@@ -21,10 +21,10 @@ priv_validator_key.json
 ```
 
 
-## Configure the Chain ID 
+## Init the data folder and configure the Chain ID 
 
 ```
-rebusd config chain-id reb_3333-1
+rebusd init <your-moniker> --chain-id reb_3333-1
 ```
  
 ## Genesis File
