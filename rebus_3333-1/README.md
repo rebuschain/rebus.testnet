@@ -32,7 +32,7 @@ rebusd config chain-id reb_3333-1
 You can download the genesis file for the chain with all the gentxs submitted and accepted and the intial chain state.
 
 ```
-curl  > ~/.rebusd/config/genesis.json
+curl https://raw.githubusercontent.com/rebuschain/rebus.testnet/master/rebus_3333-1/genesis.json > ~/.rebusd/config/genesis.json
 ```
 
 We recommend using sha256sum to check the hash of the genesis.
