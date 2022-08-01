@@ -26,7 +26,20 @@ priv_validator_key.json
 ```
 rebusd init <your-moniker> --chain-id reb_3333-1
 ```
- 
+
+## Consensus timeout_commit 
+
+The rebusd init is configuring in the config.toml [consensus] section the timeout_commit to "2s"
+
+```
+#######################################################
+###         Consensus Configuration Options         ###
+#######################################################
+[consensus]
+timeout_commit = "2s"
+```
+
+
 ## Genesis File
 
 You can download the genesis file for the chain with all the gentxs submitted and accepted and the intial chain state.
