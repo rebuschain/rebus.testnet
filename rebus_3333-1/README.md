@@ -54,8 +54,9 @@ The correct genesis file is in the https://github.com/rebuschain/rebus.testnet/t
 
 There shouldn't be any chain database yet, but in case there is for some reason, you should reset it. This is a good idea especially if you ran rebusd start on a broken genesis file. 
 
-rebusd unsafe-reset-all
-
+```
+rebusd  tendermint unsafe-reset-all 
+```
 
 ## Seed 
 
