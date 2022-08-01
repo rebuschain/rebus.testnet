@@ -1,33 +1,69 @@
 # Rebus v1 Testnet
 
-## Instructions
+## Instructions Updated
 
 ### Genesis Validators
 
-Follow the instructions on the ["Submitting your GenTx for the Rebus Incentivized Testnet"](gentx.md) guide.
+Update the rebus.core pulling the latest code 
 
-Full nodes and general participants
+```bash
+git clone https://github.com/rebuschain/rebus.core.git 
+cd rebus.core && git checkout testnet
+make install
+```
 
-Follow the instructions on the official documentation to [join the testnet](https://docs.rebuschain.com/validators/joining-the-testnets/).
+## Validators files
 
+Remeber to use your previous validator keys used to generate your gentx, these are in the ~/.rebusd/config where you ran rebusd:
+```
+node_key.json
+priv_validator_key.json
+```
+
+
+## Configure the Chain ID 
+
+```
+rebusd config chain-id reb_3333-1
+```
+ 
 ## Genesis File
 
-It will be posted on 8/1/2022
+You can download the genesis file for the chain with all the gentxs submitted and accepted and the intial chain state.
+
+```
+curl  > ~/.rebusd/config/genesis.json
+```
+
+We recommend using sha256sum to check the hash of the genesis.
+
+Linux
+```
+cd ~/.rebusd/config
+echo "d382339b5187693ef2e57ff4f33c571ee9bb238ce9fcd68ca99c02116576c41b  genesis.json" | sha256sum -c
+```
+MacOS
+```
+cd ~/.rebusd/config
+echo "d382339b5187693ef2e57ff4f33c571ee9bb238ce9fcd68ca99c02116576c41b  genesis.json" | shasum -a 256 -c
+```
+
+The correct genesis file is in the https://github.com/rebuschain/rebus.testnet/tree/master/rebus_3333-1 folder
+
+## Reset Chain Database
+
+There shouldn't be any chain database yet, but in case there is for some reason, you should reset it. This is a good idea especially if you ran rebusd start on a broken genesis file. 
+
+rebusd unsafe-reset-all
+
+
+## Seed 
+
+The file seeds contains the Rebus id/ip nodes.
+
 
 ## Details
 
 - Network Chain ID: `reb_3333-1`
 - EIP155 Chain ID: `3333`
-- rebusd version: `v0.0.2`
-
-## Schedule
-
-### Application Period
-
-Submissions open on July 25, 2022 12:00 EST, participants are required to submit gentx.
-
-Submissions close on July 27, 2022 24:00 EST.
-
-### Genesis Launch
-
-August 1, 2022 18:00 UTC.
+- rebusd version: `v0.0.3`
